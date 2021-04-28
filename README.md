@@ -6,7 +6,7 @@ Many nix configuration mechanisms (especially: modules) have special
 treatment for nixpkgs, making a single `pkgs` parameter broadly available.
 
 But nixpkgs is not a singular thing!  Many Nix users use the stable
-`release-YYMM channel/branch for most packages and use the unstable
+`release-YYMM` channel/branch for most packages and use the unstable
 channel/branch for a few packages when a newer version is needed.
 
 Adding the entire unstable branch as an overlay neatly solves this problem.
