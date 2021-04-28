@@ -20,7 +20,7 @@ let
         builtins.attrNames (builtins.functionArgs (import <nixpkgs-stable>));
       missing-parameters =
         combined.lib.subtractLists local-parameters remote-parameters;
-      # Don't warn about extra args to avoid spurious warnings as everyone
+      # Don't warn about extra parameters to avoid spurious warnings as everyone
       # rolls past nixpkgs commit 2dde58903e0f2f490088c3b0cedadc9b479da085
       # which removed the platform parameter.
       # extra-parameters =
