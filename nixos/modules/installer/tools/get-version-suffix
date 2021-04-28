@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/bin/sh `nix-instantiate --find-file nixpkgs-stable "$@"`/nixos/modules/installer/tools/get-version-suffix "$@"
